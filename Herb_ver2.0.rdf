@@ -1,0 +1,1180 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology/"
+     xml:base="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:herb-ontology="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#"
+     xmlns:untitled-ontology-22="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/untitled-ontology-22#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#CanHeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#CanHeal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#ConsumeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#ConsumeBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FromCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FromCountry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HasAdverseEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HasAdverseEffect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HasIngredient">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#isIngredientOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LocatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NativeTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NativeTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#isIngredientOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#CirculatorySystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#CirculatorySystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบหมุนเวียนโลหิต</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption">
+        <rdfs:comment>The act of using, eating, or drinking something</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#DigestiveSystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#DigestiveSystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบย่อยอาหาร</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#ExcretorySystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#ExcretorySystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบขับถ่าย</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FlowerHerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FlowerHerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#GlandsSystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#GlandsSystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบต่อมไร้ท่อ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#IntergumentarySystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#IntergumentarySystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบผิวหนัง</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#MuscularSystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#MuscularSystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบกล้ามเนื้อ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NervousSystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NervousSystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบประสาท</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#ReproductiveSystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#ReproductiveSystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบสืบพันธ์</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RespiratorySystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RespiratorySystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบหายใจ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RootHerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RootHerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SeedHerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SeedHerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SkeletalSystemSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SkeletalSystemSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>อาการระบบกระดูก</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#StemHerb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#StemHerb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Abscesses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Abscesses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Africa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Africa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Allergic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Allergic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#AloeVera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#AloeVera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BurntWounds"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Scar"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Diarrhea"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Africa"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Antarctica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Antarctica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asthma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asthma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Australia_Continent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Australia_Continent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Australia_Country -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Australia_Country">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+        <herb-ontology:LocatedIn rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Australia_Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BadBreath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BadBreath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Basil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Basil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Stress"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cooked"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Raw"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Africa"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BasilSeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BasilSeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SeedHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BlackPepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BlackPepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Obesity"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Raw"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Heartburn"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Indigestion"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Brew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Brew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BurntWounds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BurntWounds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Chamomile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Chamomile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FlowerHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Fever"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#MuscleSpasms"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Brew"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Dizziness"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Nausea"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Chilli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Chilli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BadBreath"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cooked"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Raw"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Diarrhea"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SouthAmerica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+        <herb-ontology:LocatedIn rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cholesterol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cholesterol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Constipation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Constipation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cooked -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cooked">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Coriander -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Coriander">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SeedHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#DatePalm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#DatePalm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Diarrhea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Diarrhea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Dill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Dill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SeedHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Dizziness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#England">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+        <herb-ontology:LocatedIn rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Epilepsy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Epilepsy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Fever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Feverfew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Feverfew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Fingerroot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Fingerroot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RootHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Garlic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Garlic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#StemHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cholesterol"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HighBloodPressure"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cooked"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Raw"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BadBreath"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Heartburn"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ginger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ginger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#StemHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cough"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Fever"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Brew"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cooked"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Diarrhea"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Heartburn"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Australia_Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#GingerChicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#GingerChicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+        <herb-ontology:FromCountry rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#China"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BlackPepper"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Chilli"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ginger"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ginkgo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ginkgo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#GinkgoSeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#GinkgoSeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SeedHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ginseng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ginseng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RootHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Goldenseal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Goldenseal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RootHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Hairloss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Hairloss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HeadAche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HeadAche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Heartburn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Heartburn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HighBloodPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HighBloodPressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HighBloodSugarLevels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HighBloodSugarLevels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Hydrangea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Hydrangea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FlowerHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HighBloodPressure"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#KidneyDiseases"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Brew"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Diarrhea"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Nausea"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Vomiting"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Indigestion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Indigestion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inflammation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inflammation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inhalant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inhalant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Insomnia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Insomnia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+        <herb-ontology:LocatedIn rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Itching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Itching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+        <herb-ontology:LocatedIn rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#KidneyDiseases -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#KidneyDiseases">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Lavender -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Lavender">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FlowerHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Hairloss"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inhalant"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Constipation"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#HeadAche"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Africa"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Leek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Leek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#StemHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Lyallia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Lyallia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Antarctica"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Australia_Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#MilkThistle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#MilkThistle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Mint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Mint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Nausea"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#StomachAche"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Brew"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inhalant"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Heartburn"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Mistletoe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Mistletoe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asthma"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Epilepsy"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inflammation"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Soreness"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Africa"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#MuscleSpasms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#MuscleSpasms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Nausea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Nausea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Obesity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Obesity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        <rdfs:label>โรคอ้วน</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Oregano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Oregano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SeedHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#PadKhaPhoa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#PadKhaPhoa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+        <herb-ontology:FromCountry rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Thailand"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Basil"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Chilli"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Garlic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Pasta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Pasta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+        <herb-ontology:FromCountry rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Italy"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BlackPepper"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Garlic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Raw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Raw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ritual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ritual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Rose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Rose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FlowerHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Insomnia"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Stress"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inhalant"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ritual"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Heartburn"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Nausea"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Africa"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Salsa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Salsa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BlackPepper"/>
+        <herb-ontology:HasIngredient rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Garlic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SawPalmetto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SawPalmetto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Scar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Scar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Sleepiness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Sleepiness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SlowedBreathing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SlowedBreathing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Soreness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Soreness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SouthAmerica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SouthAmerica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#StomachAche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#StomachAche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Stress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Stress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Sweetgrass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Sweetgrass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Cough"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Fever"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Brew"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Ritual"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Sleepiness"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Europe"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Thailand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Thailand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+        <herb-ontology:LocatedIn rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Turmeric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Turmeric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RootHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#USA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Country"/>
+        <herb-ontology:LocatedIn rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Valerian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Valerian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#RootHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Verbena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Verbena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FlowerHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Abscesses"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#BurntWounds"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Itching"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Wounds"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Apply"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Sleepiness"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Asia"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Vomiting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Vomiting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#WhitePepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#WhitePepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#FruitHerb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#WhiteSage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#WhiteSage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#LeaveHerb"/>
+        <herb-ontology:CanHeal rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Stress"/>
+        <herb-ontology:ConsumeBy rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Inhalant"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Sleepiness"/>
+        <herb-ontology:HasAdverseEffect rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#SlowedBreathing"/>
+        <herb-ontology:NativeTo rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#NorthAmerica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Wounds -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Wounds">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Consumption"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Food"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Herb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jitpanunopwijit/ontologies/2023/8/herb-ontology#Symptom"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
